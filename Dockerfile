@@ -3,7 +3,7 @@ FROM ubuntu:focal
 ARG TARGETPLATFORM
 ENV TARGETPLATFORM "$TARGETPLATFORM"
 
-RUN apt-get update && apt-get install -y rtl-sdr librtlsdr-dev wget libairspy0 libairspyhf0 libairspy-dev libairspyhf-dev
+RUN apt-get update && apt-get install -y rtl-sdr librtlsdr-dev wget libairspy0 libairspyhf1 libairspy-dev libairspyhf-dev
 
 RUN set -ex; \
   if [ "$TARGETPLATFORM" = "linux/amd64" ]; then \
