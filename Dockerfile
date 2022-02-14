@@ -10,6 +10,10 @@ RUN set -ex; \
     wget https://airspy.com/downloads/spyserver-linux-x64.tgz;\
     tar xvzf spyserver-linux-x64.tgz;\
     rm spyserver-linux-x64.tgz;\
+  elif [ "$TARGETPLATFORM" = "linux/arm64" ]; then \
+    wget https://airspy.com/downloads/spyserver-arm64.tgz;\
+    tar xvzf spyserver-arm64.tgz;\
+    rm spyserver-arm64.tgz;\
   elif [ "$TARGETPLATFORM" = "linux/arm/v7" ]; then \
     wget https://airspy.com/downloads/spyserver-arm32.tgz;\
     tar xvzf spyserver-arm32.tgz;\
