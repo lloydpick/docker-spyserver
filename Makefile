@@ -1,5 +1,5 @@
 build:
-	docker build -t spyserver -f Dockerfile --build-arg TARGETPLATFORM=linux/amd64 .
+	docker build -t spyserver -f Dockerfile .
 
 run:
 	docker run -it --rm \
