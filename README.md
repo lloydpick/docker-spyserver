@@ -27,7 +27,7 @@ All configuration for this Docker container is done via environmental variables 
 |`GENERAL_DESCRIPTION`     |               |Description for the directory|
 |`MAXIMUM_CLIENTS`         |`1`            |Maximum number of clients that can connect at a time|
 |`MAXIMUM_SESSION_DURATION`|`0`            |Maximum session duration in minutes. `0` for no limit|
-|`AlLOW_CONTROL`           |`1`            |Allow clients to retune and change of gain of the device|
+|`ALLOW_CONTROL`           |`1`            |Allow clients to retune and change of gain of the device|
 |`DEVICE_TYPE`             |`Auto`         |Possible Values: `AirspyOne`, `AirspyHF+`, `RTL-SDR`, `Auto` (Scans for the first available device)|
 |`DEVICE_SERIAL`           |`0`            |Device Serial Number as 64bit hex eg. `0xDD52D95C904534AD`. A value of `0` will acquire the first available device.|
 |`FFT_FPS`                 |`15`           |FFT Frames Per Second|
@@ -35,6 +35,14 @@ All configuration for this Docker container is done via environmental variables 
 |`INITIAL_FREQUENCY`       |`7100000`      |Initial Center Frequency|
 |`BUFFER_SIZE_MS`          |`50`           |Buffer Size (in milliseconds)|
 |`BUFFER_COUNT`            |`10`           |Buffer Count|
+|`DEVICE_SAMPLE_RATE`      |`2500000`      |Device Sample Rate|
+|`INITIAL_FREQUENCY`       |`7100000`      |Initial Center Frequency (in Hz)|
+|`INITIAL_GAIN`            |`5`            |Initial Gain|
+|`ENABLE_BIAS_TEE`         |`0`            |Bias-Tee - For AirspyOne only - Useful for LNA's and SpyVerter|
+|`FORCE_8BIT`              |`1`            |Force 8bit Compression Mode - Use it to same some internet bandwidth.|
+|`MAXIMUM_BANDWIDTH`       |`15000`        |Maximum Bandwidth - Recommended value for narrow band modes is 15000|
+|`MAXIMUM_FREQUENCY`       |`35000000`     |Maximum Tunable Frequency (in Hz)|
+|`MINIMUM_FREQUENCY`       |`0`            |Minimum Tunable Frequency (in Hz)|
 
 ### Rebuilding
 
