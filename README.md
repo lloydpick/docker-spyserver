@@ -1,12 +1,12 @@
 # Docker AirSpy SpyServer
 
-Docker container for [AirSpy SpyServer](https://airspy.com/download), with support for x86 and arm32.
+Docker container for [AirSpy SpyServer](https://airspy.com/download), with support for x86, arm64 and arm32.
 
 [![](https://images.microbadger.com/badges/version/lloydpick/spyserver.svg)](https://microbadger.com/images/lloydpick/spyserver "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/lloydpick/spyserver.svg)](https://microbadger.com/images/lloydpick/spyserver "Get your own image badge on microbadger.com") https://hub.docker.com/r/lloydpick/spyserver
 
 ## Summary
 
-The container provides you with the SpyServer application running on port 5555. It has been tested with an RTL-SDR R820T2 RTL2832U device on a Raspberry Pi 3 Model B+. There is a [docker-compose.yml](https://github.com/lloydpick/docker-spyserver/blob/master/docker-compose.yml) file should you want to see how to correctly mount the USB device.
+The container provides you with the SpyServer application running on port 5555. It has been tested with RTL-SDR R820T2 RTL2832U, AirspyOne and AirspyHF+ SDR devices on a Raspberry Pi 3 Model B+, Pi 4 and amd64 computing platforms. There is a [docker-compose.yml](https://github.com/lloydpick/docker-spyserver/blob/master/docker-compose.yml) file should you want to see how to correctly mount the USB device.
 
 ### Example
 
