@@ -15,7 +15,7 @@ RUN set -ex; \
     tar xvzf spyserver-arm64.tgz;\
     rm spyserver-arm64.tgz;\
   elif [ "$TARGETPLATFORM" = "linux/arm/v7" ]; then \
-    wget https://airspy.com/downloads/spyserver-arm32.tgz;\
+    wget --no-check-certificate https://airspy.com/downloads/spyserver-arm32.tgz;\
     tar xvzf spyserver-arm32.tgz;\
     rm spyserver-arm32.tgz;\
   fi;
