@@ -7,6 +7,6 @@ run:
 	spyserver
 
 buildx:
-	docker buildx build --platform linux/arm/v7,linux/amd64 -t lloydpick/spyserver --push .
+	docker buildx build --platform linux/arm/v7,linux/amd64,linux/arm64 -t lloydpick/spyserver --push .
 
 .PHONY: build
